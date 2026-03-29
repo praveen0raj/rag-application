@@ -62,7 +62,8 @@ Use AskUserQuestion to select how to specify the review target:
 | Findings requiring judgment | Output as additional questions in `requirements_analysis_q_and_a.md` |
 
 - See `.claude/skills/docs/question_format.md` for additional question format
-- Prefix questions with "# Review Findings (Additional Questions)" header to distinguish them
+- **IMPORTANT: If `requirements_analysis_q_and_a.md` already exists, read it first and APPEND review findings to the end of the file. NEVER overwrite or remove existing questions and answers.** Use the Edit tool to append, not the Write tool which overwrites.
+- Prefix review findings with "# Review Findings (Additional Questions)" header to distinguish them from earlier Q&A
 - Question numbers must be sequential (continue from existing questions, appended at the end)
 - After output, confirm that questions include these options:
     - Other
