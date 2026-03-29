@@ -1,4 +1,4 @@
-# Ask My Docs — Production RAG Application
+# RAG Enterprise Engine
 
 A production-grade Retrieval Augmented Generation (RAG) system that enables users to ask natural language questions against a corpus of ingested documents and receive accurate, cited answers.
 
@@ -51,8 +51,8 @@ User → FastAPI → Retrieval Pipeline → Weaviate (Hybrid Search)
 
 ```bash
 # 1. Clone the repo
-git clone git@github.com:praveen0raj/rag-application.git
-cd rag-application
+git clone git@github.com:praveen0raj/rag-enterprise-engine.git
+cd rag-enterprise-engine
 
 # 2. Configure environment
 cp .env.example .env
@@ -83,7 +83,7 @@ kubectl create secret generic rag-app-secrets \
 ## Project Structure
 
 ```
-rag-application/
+rag-enterprise-engine/
 ├── src/
 │   ├── api/              # FastAPI endpoints
 │   ├── ingestion/        # Document loading, chunking, embedding

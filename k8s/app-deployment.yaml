@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: rag-app
-          image: rag-application:latest
+          image: rag-enterprise-engine:latest
           ports:
             - containerPort: 8000
           envFrom:
